@@ -1,0 +1,42 @@
+
+#root {
+  padding: 2rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: #121417;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  color: #121417;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.container {
+  max-width: 1312px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.button {
+  border-radius: 12px;
+  padding: 14px 39px;
+  cursor: pointer;
+  font-weight: 700;
+}
+

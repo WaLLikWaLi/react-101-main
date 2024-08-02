@@ -1,0 +1,46 @@
+.header {
+  max-width: 1184px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.header__logo {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  font-weight: 500px;
+  font-size: 20px;
+}
+
+.header__nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__pages {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 28px;
+}
+
+.header__registration {
+  
+  background-color: black;
+  color: white;
+}
+.header__login {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.header__buttons{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
