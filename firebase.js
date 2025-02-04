@@ -1,14 +1,14 @@
-// Import the functions you need from the SDKs you need
+// firebase.js
 import { initializeApp } from "firebase/app";
-import { getAnalytics } from "firebase/analytics";
-// TODO: Add SDKs for Firebase products that you want to use
-// https://firebase.google.com/docs/web/setup#available-libraries
+import { getDatabase } from "firebase/database"; // Імпорт для Realtime Database
+import { getAuth } from "firebase/auth";
 
-// Your web app's Firebase configuration
-// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+// Ваші конфігураційні дані Firebase
 const firebaseConfig = {
   apiKey: "AIzaSyB9rVbpvS6Mv2grr__4AiXPkMKvduPRCW4",
   authDomain: "myprojectreact-432ae.firebaseapp.com",
+  databaseURL:
+    "https://myprojectreact-432ae-default-rtdb.europe-west1.firebasedatabase.app",
   projectId: "myprojectreact-432ae",
   storageBucket: "myprojectreact-432ae.appspot.com",
   messagingSenderId: "971856546009",
@@ -17,5 +17,10 @@ const firebaseConfig = {
 };
 
 // Initialize Firebase
-const app = initializeApp(firebaseConfig);
-const analytics = getAnalytics(app);
+export const app = initializeApp(firebaseConfig);
+
+// Імплементація для Realtime Database
+export const db = getDatabase(app);
+
+// Імплементація для Authentication
+export const auth = getAuth(app);

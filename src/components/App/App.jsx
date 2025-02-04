@@ -1,12 +1,15 @@
-import "../../index.css";
 import Header from "../Header/Header";
 import Main from "../Main/Main";
+import Auth from "../Auth/Auth";
+import AddTeacherForm from "../AddTeacher";
 
 const App = () => {
   return (
     <>
-      <Header></Header>
-      <Main></Main>
+      <Header />
+      <Main />
+      <Auth />
+      <AddTeacherForm />
     </>
   );
 };
