@@ -1,6 +1,6 @@
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
-import { loginSchema } from "../../shemas/authSchemas"; // Ensure correct path
+import { loginSchema } from "../../shemas/authSchemas";
 import { useDispatch } from "react-redux";
 import { doLogIn } from "../../redux/auth/authOps";
 const LoginForm = ({ onClose }) => {

@@ -1,9 +1,8 @@
-// firebase.js
+
 import { initializeApp } from "firebase/app";
-import { getDatabase } from "firebase/database"; // Імпорт для Realtime Database
+import { getDatabase } from "firebase/database"; 
 import { getAuth } from "firebase/auth";
 
-// Ваші конфігураційні дані Firebase
 const firebaseConfig = {
   apiKey: "AIzaSyB9rVbpvS6Mv2grr__4AiXPkMKvduPRCW4",
   authDomain: "myprojectreact-432ae.firebaseapp.com",
@@ -16,11 +15,8 @@ const firebaseConfig = {
   measurementId: "G-0Y02WKDHJT",
 };
 
-// Initialize Firebase
 export const app = initializeApp(firebaseConfig);
 
-// Імплементація для Realtime Database
 export const db = getDatabase(app);
 
-// Імплементація для Authentication
 export const auth = getAuth(app);

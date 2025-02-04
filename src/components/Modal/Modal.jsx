@@ -10,7 +10,6 @@ const Modal = ({ isOpen, onClose, children }) => {
 
     window.addEventListener("keydown", handleKeyDown);
 
-    // Очистити подію при розмонтуванні
     return () => {
       window.removeEventListener("keydown", handleKeyDown);
     };
